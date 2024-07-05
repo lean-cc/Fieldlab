@@ -45,9 +45,9 @@ $php -S localhost:80
 ## Feature request
 
 - Dark mode
-- Remove registration and deregistration for teachers
+- Remove registration and deregistration to assignments for teachers
 - See if a user is a teacher or a student at the admin panel
-- Text field larger for add command
+- Text field larger for add assignments
 
 ## Credits
 
