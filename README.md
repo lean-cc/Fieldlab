@@ -35,7 +35,7 @@ You need:
 
 ```bash
 # Clone the repository
-$git clone https://github.com/horizoncollege/Fieldlab
+$git clone https://github.com/lean-cc/Fieldlab
 # Import the SQL database
 $ mysql -u root -p fieldlab < import.sql
 # Run the application
