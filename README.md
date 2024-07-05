@@ -1,54 +1,53 @@
-
 <h1 align="center">
-  <br>
-  Fieldlab
-  <br>
+ <br>
+ Field lab
+ <br>
 </h1>
 
-<h4 align="center">Een fieldlab applicatie om opdrachten te beheren.</h4>
+<h4 align="center">A field lab application to manage assignments.</h4>
 
 <p align="center">
-  <a href="#belangrijkste-kenmerken">Belangrijkste kenmerken</a> •
-  <a href="#hoe-te-gebruiken">Hoe te gebruiken</a> •
-  <a href="#credits">Credits</a>
+ <a href="#key-features">Key features</a> •
+ <a href="#how-to-use">How to use</a> •
+ <a href="#credits">Credits</a>
 </p>
 
 ![image](https://github.com/horizoncollege/Fieldlab/assets/157012382/7f2934ff-2ce1-40ec-b005-7fe0e3e1dc94)
 
-## Belangrijkste kenmerken
+## Most important features
 
-* Opdrachten beheren
-  - Opdrachten aanmaken als docent
-  - Opdrachten wijzigen als docent
-  - Opdrachten verwijderen als docent
-  - Opdrachten bekijken en openen
-* Wachtwoord veranderen 
-* Studenten beheren via de docenten panel
-  - Studenten registreren
-  - Klas wijzigen van studenten
-* In- uitschrijven bij opdrachten
+* Manage assignments
+ - Create assignments as a teacher
+ - Change assignments as a teacher
+ - Delete assignments as a teacher
+ - View and open assignments
+* Change Password
+* Manage students via the teachers panel
+ - Register students
+ - Changing class of students
+* Register/unsubscribe from assignments
 
-## Hoe te gebruiken
+## How to use
 
-Je hebt nodig:
+You need:
 - PHP 8.3.6
 - Mysql 8.0.37
 
 ```bash
-# Clone de repository
-$ git clone https://github.com/horizoncollege/Fieldlab
-# Import de sql database
+# Clone the repository
+$git clone https://github.com/horizoncollege/Fieldlab
+# Import the SQL database
 $ mysql -u root -p fieldlab < import.sql
-# Run de applicatie
-$ php -S localhost:80
+# Run the application
+$php -S localhost:80
 ```
 
-## Functie verzoek
+## Feature request
 
 - Dark mode
-- In- uitschrijven weg halen voor docenten
-- Zien of een gebruiker een docent of student is bij de admin panel
-- Text-field groter voor opdracht toevoegen
+- Remove registration and deregistration for teachers
+- See if a user is a teacher or a student at the admin panel
+- Text field larger for add command
 
 ## Credits
 
