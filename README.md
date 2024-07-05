@@ -12,19 +12,19 @@
  <a href="#credits">Credits</a>
 </p>
 
-![image](https://github.com/horizoncollege/Fieldlab/assets/157012382/7f2934ff-2ce1-40ec-b005-7fe0e3e1dc94)
+![image](https://github.com/lean-cc/Fieldlab/assets/114680621/09b0394b-f46e-406e-9724-06ac8efafebf)
 
 ## Most important features
 
 * Manage assignments
- - Create assignments as a teacher
- - Change assignments as a teacher
- - Delete assignments as a teacher
- - View and open assignments
+  - Create assignments as a teacher
+  - Change assignments as a teacher
+  - Delete assignments as a teacher
+  - View and open assignments
 * Change Password
 * Manage students via the teachers panel
- - Register students
- - Changing class of students
+  - Register students
+  - Changing class of students
 * Register/unsubscribe from assignments
 
 ## How to use
