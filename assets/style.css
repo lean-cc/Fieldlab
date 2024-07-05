@@ -1,0 +1,764 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 5px;
+    background-color: rgb(208, 208, 208);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+nav div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav div:first-child img,
+video {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+nav div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+nav div:last-child svg {
+    width: 27px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    transition: all .2s;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.dash-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dash-opdrachten {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    max-width: 770px;
+}
+
+.dash-opdrachten .challenge {
+    width: 100%;
+    max-width: unset;
+}
+
+main section:first-child {
+    border-radius: 10px;
+    padding: 8px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: fit-content;
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    max-width: 250px;
+}
+
+main .quicklinks {
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: unset;
+    max-width: 800px;
+    width: 100%;
+    height: fit-content;
+}
+
+main .quicklinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    gap: 8px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    transition: all .2s;
+    background-color: white;
+    min-width: 185px;
+}
+
+main .quicklinks a:hover {
+    transform: scale(1.03);
+}
+
+main .quicklinks a svg {
+    width: 30px;
+}
+
+main .aside h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main .aside div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .aside div p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 5px;
+}
+
+main .aside div span {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main .aside div p svg {
+    width: 25px;
+}
+
+button {
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid darkgrey;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.toevoegen {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.form-toevoegen {
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.form-toevoegen .form-group input {
+    margin: 0;
+}
+
+.form-toevoegen .form-group input,
+textarea {
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-toevoegen .form-group input[type="date"] {
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.form-toevoegen .form-group input[type="submit"] {
+    background-color: rgb(191, 210, 251);
+    padding: 10px;
+    transition: all .2s;
+}
+
+.form-toevoegen .form-group input[type="submit"]:hover {
+    background-color: rgb(168, 186, 224);
+}
+
+.form-toevoegen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.registerloginmain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+
+.registerloginmain form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.registerloginmain form input {
+    margin: 0;
+}
+
+.registerloginmain form button {
+    font-size: 16px;
+    background-color: rgb(191, 210, 251);
+    border: 0;
+    padding: 7px;
+    transition: all .2s;
+}
+
+.registerloginmain .regfooter {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+}
+
+.registerloginmain .regfooter a {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    transition: all .2s;
+}
+
+.registerloginmain .regfooter a:hover {
+    color: darkgrey;
+}
+
+.registerloginmain form button:hover {
+    background-color: rgb(168, 186, 224);
+}
+
+.registerloginmain form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 350px;
+}
+
+label[for="captcha"] {
+    cursor: pointer;
+}
+
+label[for="captcha"] img {
+    pointer-events: none;
+    width: 300px;
+}
+
+label[for="captcha"] input {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    left: 51px;
+    bottom: 33px;
+    height: 25px;
+    width: 25px;
+}
+
+.submit-toevoegen {
+    font-size: 15px !important;
+}
+
+.challenge {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    word-break: break-all;
+    cursor: alias;
+}
+
+.challenge p {
+    max-height: 20px;
+    overflow: hidden;
+}
+
+.challenge h2 {
+    text-align: left;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.challenge #btn {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.challenge #date {
+    color: grey;
+    font-weight: 600;
+}
+
+.challenge a {
+    text-decoration: none;
+    background-color: rgb(191, 210, 251);
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    transition: all .2s;
+    word-break: keep-all;
+}
+
+.challenge a:hover {
+    background-color: rgb(168, 186, 224);
+}
+
+.tab {
+    width: 200px;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 12px 10px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: lightgray;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    word-break: break-all;
+    width: 100%;
+}
+
+.account-tabs {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    gap: 10px;
+}
+
+.beheer-input {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+
+.beheer-input input {
+    margin: 0;
+    padding: 2px 5px;
+    width: 100%;
+    max-width: 100px;
+}
+
+.beheer-input button {
+    width: fit-content;
+    border: 0;
+}
+
+.wwchange {
+    height: fit-content;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    background-color: white;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.wwchange button {
+    background-color: rgb(191, 210, 251);
+    border: 0;
+    padding: 10px;
+    transition: all .2s;
+
+}
+
+.wwchange button:hover {
+    background-color: rgb(168, 186, 224);
+}
+
+.wwchange input {
+    margin: 0;
+}
+
+#acc-con {
+    display: flex;
+    gap: 10px;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+td:nth-child(3) {
+    width: 150px;
+}
+
+.modal {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 100px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    display: flex;
+    position: relative;
+    background-color: #fefefe;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1300px;
+    word-break: break-all;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all .2s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(191, 210, 251);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.opdracht-details {
+    margin: auto;
+    width: 100%;
+}
+
+.opdracht-details input,textarea {
+    padding: 3px 5px;
+}
+
+.opdracht-details textarea {
+    width: 100%;
+    max-width: unset;
+    resize: vertical;
+}
+
+.opdracht-details button[name="delete"] {
+    border: 2px solid rgb(207, 0, 0);
+    transition: all .2s;
+}
+
+.opdracht-details button[name="delete"]:hover {
+    background-color: rgb(214, 166, 166);
+}
+
+.opdracht-details button[name="edit"] {
+    border: 2px solid rgb(168, 186, 200);
+    transition: all .2s;
+}
+
+.opdracht-details button[name="edit"]:hover {
+    background-color: rgba(203, 216, 246, 0.700);
+}
+
+.opdracht-details p {
+    background-color: rgb(229, 229, 229);
+    border: 2px solid lightgrey;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.opdracht-details span {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 15px;
+    gap: 10px;
+    word-break: keep-all;
+}
+
+.opdracht-details span div {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+
+.opdracht-details span form {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 8px;
+}
+
+.opdracht-details span h4 {
+    word-break: keep-all;
+    width: 100%;
+    max-width: max-content;
+    color: grey;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .dash-opdrachten {
+        flex-wrap: wrap;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .account-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tab {
+        display: flex;
+        width: 100%;
+    }
+
+    #acc-con {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.help-title {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.section-title {
+    color: #555;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.section-content {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.section-divider {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.slogan {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.slogan svg {
+    width: 20px;
+}
+
+.deadlines-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    word-break: break-all;
+}
+
+.deadlines-container li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.deadlines-container h2 {
+    text-align: left;
+}
+
+.deadlines-container a {
+    margin: 3px 0;
+    color: rgb(110, 131, 177);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.deadlines-container li a:hover {
+    text-decoration: underline;
+}
