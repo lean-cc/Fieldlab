@@ -14,7 +14,7 @@
 
 ![image](https://github.com/lean-cc/Fieldlab/assets/114680621/09b0394b-f46e-406e-9724-06ac8efafebf)
 
-## Most important features
+## Key features
 
 * Manage assignments
   - Create assignments as a teacher
